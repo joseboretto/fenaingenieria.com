@@ -311,6 +311,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  /*hago que se separe un poco del borde*/
+  margin-left: 5%;
 }
 .img-rounded {
   border-radius: 6px;
