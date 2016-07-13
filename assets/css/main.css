@@ -138,6 +138,19 @@ h3 {
 	font-weight: 500;
 	color: #CCC;
 }
+
+.table {
+    width: 100%;
+    overflow-y: auto;
+    _overflow: auto;
+}
+
+.shadow {
+  -moz-box-shadow:    2px 2px 6px 6px #3F3F3F;
+  -webkit-box-shadow: 2px 2px 6px 6px #3F3F3F;
+  box-shadow:         2px 2px 6px 6px #3F3F3F;
+  /*3F3F3F*/
+}
 /* Paragraph & Typographic */
 p {
 	line-height: 26px;
@@ -223,7 +236,7 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/header_bg.jpg) no-repeat center top;
+	background: url(../img/header_bg6.jpg) no-repeat center top;
 	padding-top: 200px;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -273,6 +286,10 @@ a:before, a:after {
 	outline: 0px;
 	border: 1px solid #fff;
 }
+/* ==========================================================================
+   ABOUT SECTION
+   ========================================================================== */
+
 #about {
 	background-color: #2a5b2f;
     color: #FFF;
@@ -284,14 +301,21 @@ a:before, a:after {
 #about img {
 	margin-top: 0;
 }
+#about h3 {
+	color: #FFF;
+}
+/* ==========================================================================
+   SERVICES Sections
+   ========================================================================== */
+
 #services {
 	background-color: #2b2b2b;
+	/*background: url(../img/bg-service3.jpg) no-repeat center center fixed;*/
 	padding: 60px 0;
-	
 	background-size: cover;
 }
 #services .fa {
-	color: #CCC;
+	color: #fff;
 	position: center;
 }
 #services hr {
@@ -313,13 +337,125 @@ a:before, a:after {
 	text-align: left;
 	color: #fff;
 }
-#services H2 {
+#services h2 {
 	color: #fff;
 }
-#services H3 {
-	color: #2a5b2f;
+#services h3 {
+	color: #fff;
 	text-align: center;
 }
+
+/*Jose servicios*/
+.cajaCompleta {
+	margin-bottom: 0%;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    background-color: #2a5b2f;
+}
+
+.cajaCompleta .contenido-bloques {
+	padding: 2%;
+}
+
+
+.cajas{
+    min-height: 500px;
+    padding: 2%;
+    
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+    
+    overflow:hidden;
+	height:3%;
+	position:relative;
+}
+#caja0{
+	background-color: rgba(138,203,75,.95);
+}
+#caja1{
+	background-color: rgba(233,83,60,.95);
+}
+#caja2{
+	background-color: rgba(52,196,197,.95);
+}
+#caja3{
+	background-color: rgba(104,45,130,.95);
+}
+#caja4{
+	background-color: rgba(239,132,9,.95);
+}
+
+.titulos-bloques {
+	padding: 5%;
+	font-size: 24px;
+	color: #FFF;
+}
+.contenido-bloques {
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+
+
+}
+.boton-bloque {
+    margin: 7px auto 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5%;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+/*fin jose*/
+/*INICIO SYSTEM GRID*/
+//*  SECTIONS  */
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1%;
+	/*margin: 1% 0 1% 1.6%;*/
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF FOUR  */
+.span_4_of_4 {
+	width: 98%;
+}
+.span_1_of_4 {
+	width: 23%;
+}
+
+/*  GO FULL WIDTH BELOW 1000 PIXELS */
+@media only screen and (max-width: 1000px) {
+	/*.col {  margin: 1% 0 1% 0%; }*/
+	.span_1_of_4, .span_2_of_4, .span_3_of_4 { width: 48%; }
+}
+
+/*  GO FULL WIDTH BELOW 480 PIXELS */
+@media only screen and (max-width: 480px) {
+	.col {  margin-top: 10%; }
+	.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 98%;}
+	.cajas{min-height: 100%;}
+	.boton-bloque {    position: relative; }
+	.cajaCompleta .contenido-bloques {
+	padding-left: 5%;
+	padding-right: 2%;
+	padding-top: 2%;
+	padding-bottom: 2%;}
+}
+/*FIN SYSTEM GRID*/
 #team {
 	background: url(../img/bg.jpg) no-repeat center center fixed;
 	padding: 60px 0;
