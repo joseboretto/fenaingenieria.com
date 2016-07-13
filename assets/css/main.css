@@ -83,7 +83,7 @@ body {
 	letter-spacing: 1px;
 }
 .modal-footer {
-	background: #34b1c4;
+	background: #181c66;
 }
 .navbar-default .navbar-nav > li > a {
   color: #555;
@@ -98,7 +98,7 @@ body {
 }
 .navbar-default {
 	background-color: #fff;
-	padding: 6px 0 1px;
+	padding: 6px 0 6px;
 	box-shadow: 0 0 3px #ccc;
 	font-weight: 500;
 }
@@ -198,7 +198,7 @@ blockquote cite:before {
 }
 /* Links */
 a {
-	color: #4abcc5;
+	color: #2a5b2f;
 	word-wrap: break-word;
 	-webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
 	-moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -207,7 +207,7 @@ a {
 	transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 a:hover, a:focus {
-	color: #c0392b;
+	color: #fff;
 	text-decoration: none;
 	outline: 0;
 }
@@ -287,11 +287,12 @@ a:before, a:after {
 #services {
 	background-color: #2b2b2b;
 	padding: 60px 0;
-	text-align: center;
+	
 	background-size: cover;
 }
 #services .fa {
 	color: #CCC;
+	position: center;
 }
 #services hr {
 	display: block;
@@ -309,7 +310,7 @@ a:before, a:after {
 	border: none;
 }
 #services p {
-	text-align: center;
+	text-align: left;
 	color: #fff;
 }
 #services H2 {
@@ -317,6 +318,7 @@ a:before, a:after {
 }
 #services H3 {
 	color: #2a5b2f;
+	text-align: center;
 }
 #team {
 	background: url(../img/bg.jpg) no-repeat center center fixed;
@@ -572,6 +574,20 @@ ul.social-buttons li a:hover, ul.social-buttons li a:focus, ul.social-buttons li
 	bottom: 10px;
 	right: 30px;
 }
+
+ .google-maps {
+        position: relative;
+        padding-bottom: 75%; // This is the aspect ratio
+        height: 0;
+        overflow: hidden;
+    }
+    .google-maps iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 75% !important;
+    }
 
 /* ==========================================================================
    MEDIA QUERIES
